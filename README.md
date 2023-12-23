@@ -24,4 +24,4 @@ The units that have been implemented are:
   3. Millimeters
   4. Feet
 
-You can convert from each one to anyone else.
+You can convert from each Unit to everyone else.
