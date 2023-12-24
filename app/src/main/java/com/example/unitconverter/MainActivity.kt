@@ -86,7 +86,7 @@ fun UnitConverter() {
             onValueChange =  {
                 inputValue = it
                 converterUnits()
-                             },
+            },
             keyboardOptions = KeyboardOptions.Default.copy(
                 keyboardType = KeyboardType.Number,
                 imeAction = ImeAction.Done
@@ -94,9 +94,8 @@ fun UnitConverter() {
             modifier = Modifier.padding(8.dp),
             label = {Text("Enter Value")}
         )
-//        Spacer(modifier = Modifier.height(16.dp))
         Row {
-            Box() {
+            Box {
                 Button(onClick = { iExpanded = true }) {
                     Text(text = inputUnit)
                     Icon(
@@ -147,7 +146,7 @@ fun UnitConverter() {
                 }
             }
             Spacer(modifier = Modifier.width(36.dp))
-            Box() {
+            Box {
                 Button(onClick = { oExpanded = true }) {
                     Text(text = outputUnit)
                     Icon(
